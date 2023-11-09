@@ -1,2 +1,0 @@
-# python.beginner
-learning python

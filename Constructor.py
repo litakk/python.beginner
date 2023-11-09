@@ -94,3 +94,69 @@
 # это способ создания нового класса для использования деталей существующего класса без его изменения.
 # Вновь созданный класс является производным классом (или дочерним классом).
 # Аналогично, существующий класс является базовым (или родительским классом).
+#  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# from abc import ABC, abstractmethod
+
+# class ElectronicItems(ABC):
+#     def __init__(self, name, model, price:int):
+#         self.name = name
+#         self.model = model
+#         self.price = price
+        
+#     def __str__(self):
+#         return f'Name: {self.name}'
+
+#     @abstractmethod
+#     def get_info(self):
+#         raise NotImplementedError
+    
+# class Phone(ElectronicItems):
+#     def __init__(self, name:str, model:str, price: int, year:str):
+#         super().__init__(name, model, price)
+#         self.year = year
+    
+#     def get_info(self):
+#       return f'Это {self.name} модели {self.model} его цена составялет {self.price}$, он был выпущен в {self.year} году'
+
+# result = Phone("Телефон", "Nokia", 500, 2000 )
+# print(result.get_info())
+
+
+from abc import ABC, abstractmethod
+
+class ElectronicItems(ABC):
+    def __init__(self, name, model, price:int):
+        self.name = name
+        self.model = model
+        self.price = price
+
+    def __str__(self):
+        return f'Name: {self.name}'
+
+    @abstractmethod
+    def get_info(self):
+        pass
+
+class Phone(ElectronicItems):
+    def __init__(self, name:str, model:str, price: int, year:str):
+        super().__init__(name, model, price)
+        self.year = year
+        
+    def get_info(self):
+        return f'Это {self.name} модели {self.model} его цена составляет {self.price}$, он был выпущен в {self.year} году'
+
+result = Phone("Телефон", "Nokia", 500, 2000)
+print(result.get_info())
+
+
+class CordPhone(ElectronicItems):
+    def __init__(self, name:str, model:str, price: int, width:str, height:str):
+        super().__init__(name, model, price)
+        self.width = width
+        self.height= height
+        
+    def get_info(self):
+        return f'Домашний {self.name} модели:{self.model}, цена рынка: {self.price}$, ширина составляет {self.width}, а высота {self.height}'
+
+result = CordPhone("телефон", "Panasonic KX-TGC310", 50, '21 см.', '7 см.' )
+print(result.get_info())
