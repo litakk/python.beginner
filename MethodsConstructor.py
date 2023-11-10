@@ -1,7 +1,5 @@
-############### Polymorphism
-# Polymorphism allows you define one interface and have multiple implementations.
-# Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
-
+############### Polymorphism - Полиморфизм позволяет определить один интерфейс и иметь несколько реализаций.
+# Полиморфизм означает «множество форм», и он возникает, когда у нас есть много классов, связанных друг с другом наследованием.
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -48,25 +46,24 @@ print(a.do_smth())
 ############################################################################################
 ################### DECORATORS
 
-# @property   is a built-in decorator in Python that is used to define the properties
-#             of an object. The @property decorator makes the work easier by
-#             automatically calling the getter method when the value of the attribute is accessed.
+# @property   — это встроенный декоратор в Python, который используется для определения свойств
+# № объекта. Декоратор @property упрощает работу,
+# автоматически вызываем метод получения при доступе к значению атрибута.
 
-# @classmethod is a built-in decorator in Python that is used to create class methods.
-#              The class method can be called by both the class and the object.
-#              This method accepts the class as the first argument that is passed automatically
-#              when the method is called.
+# @classmethod — это встроенный декоратор в Python, который используется для создания методов класса.
+# Метод класса может быть вызван как классом, так и объектом.
+# Этот метод принимает класс в качестве первого аргумента, который передается автоматически
+# при вызове метода.
 
-# @staticmethod is a built-in decorator in Python that defines a static method.
-#               A static method doesn’t receive any reference argument whether it is called by an
-#               instance of a class or by the class itself. This means that a static method can neither
-#               modify object state nor class state. Static methods are restricted in what data they can
-#               access - and they’re primarily a way to namespace your methods.
+# @staticmethod — встроенный декоратор Python, определяющий статический метод.
+# Статический метод не получает никаких ссылочных аргументов, независимо от того, вызывается ли он
+# экземпляр класса или сам класс. Это означает, что статический метод не может ни
+# изменить состояние объекта или состояние класса. Статические методы ограничены в том, какие данные они могут использовать.
+# доступ - и это в первую очередь способ размещения имен ваших методов.
 
-# -- Static method knows nothing about the class and just deals with the parameters.
-# -- Class method works with the class since its parameter is always the class itself.
-
-# Link that is about difference of two decorators:
+# -- Static -- Статический метод ничего не знает о классе и занимается только параметрами.
+# --  Class -- метод класса работает с классом, поскольку его параметром всегда является сам класс.
+# Ссылка о разнице двух декораторов:
 # https://sparkbyexamples.com/python/python-difference-between-staticmethod-and-classmethod/#h-1-what-is-staticmethod
 
 from datetime import date
