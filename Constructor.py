@@ -1,32 +1,32 @@
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Animals(ABC):
-#     def __init__(self, name, *args, **kwargs): # АРГУМЕНТ - self ЭТО ИМЯ ЖИВОТНОГО 
-#         self.name = name 
+class Animals(ABC):
+    def __init__(self, name, *args, **kwargs): # АРГУМЕНТ - self ЭТО ИМЯ ЖИВОТНОГО 
+        self.name = name 
 
-#     def __str__(self): # ПРЕЗЕНТАЦИЯ РЕЗУЛЬТАТА
-#         return f"Class {self.name}"
+    def __str__(self): # ПРЕЗЕНТАЦИЯ РЕЗУЛЬТАТА
+        return f"Class {self.name}"
 
-#     @abstractmethod
-#     def get_info(self): # Это определение метода get_info, Метод возвращает информацию о животном.
-#         raise NotImplementedError # Нереализованная ошибка
+    @abstractmethod
+    def get_info(self): # Это определение метода get_info, Метод возвращает информацию о животном.
+        raise NotImplementedError # Нереализованная ошибка
 
 
 
-# # super().__init__(name) : Эта строка вызывает конструктор 
-# # родительского класса Animals и передает #  аргумент name.
-# class Tiger(Animals):
-#     def __init__(self, name:str, age:int, speed:int) -> None:
-#         super().__init__(name) # вызывает конструктор класса Animals и передает аргумент name.
-#         self.age = age
-#         self.speed = speed
+# super().__init__(name) : Эта строка вызывает конструктор 
+# родительского класса Animals и передает #  аргумент name.
+class Tiger(Animals):
+    def __init__(self, name:str, age:int, speed:int) -> None:
+        super().__init__(name) # вызывает конструктор класса Animals и передает аргумент name.
+        self.age = age
+        self.speed = speed
 
-#     def get_info(self):
-#         return f"{self.name} ему {self.age} лет, и он может бегать {self.speed} км/ч"
+    def get_info(self):
+        return f"{self.name} ему {self.age} лет, и он может бегать {self.speed} км/ч"
 
-# tiger1 = Tiger("White tiger", 10, 25)
-# print(tiger1)
-# print(tiger1.get_info())
+tiger1 = Tiger("White tiger", 10, 25)
+print(tiger1)
+print(tiger1.get_info())
 
 # from abc import ABC, abstractmethod
 
