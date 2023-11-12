@@ -178,3 +178,42 @@ print(tiger1.get_info())
 
 
 # Великий уровнитель 1,2,3
+
+
+
+
+# class Parent:
+#     def __init__(self, name):
+#         self.name = name
+    
+#     def test(self):
+#         print("Hello world")
+
+# class Child(Parent, ABC):
+# #     Inherited members from parent class
+# #     Additional members of the child class
+#     def __init__(self, name, age):
+#         super().__init__(name)  # => calls the parent class constructor
+#         self.age = age
+
+#     def test(self):
+#         print("Hello world from child")
+
+#     def __repr__(self) -> str:
+#         '''
+#             Is used to represent the object with a string.
+#             It is used for debugging and logging.
+#         '''
+#         return f"{self.name} is {self.age} years old"
+
+#     def __str__(self) -> str:
+#         '''
+#             Is used to represent the object with a string.
+#             It is used for the end user.
+#         '''
+#         return f"{self.name} is {self.age} years old"
+
+
+# child = Child("John", 20)
+# print(child)
+# print(child.test())
