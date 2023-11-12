@@ -122,41 +122,53 @@
 # print(result.get_info())
 
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class ElectronicItems(ABC):
-    def __init__(self, name, model, price:int):
-        self.name = name
-        self.model = model
-        self.price = price
+# class ElectronicItems(ABC):
+#     def __init__(self, name, model, price:int):
+#         self.name = name
+#         self.model = model
+#         self.price = price
 
-    def __str__(self):
-        return f'Name: {self.name}'
+#     def __str__(self):
+#         return f'Name: {self.name}'
 
-    @abstractmethod
-    def get_info(self):
-        pass
+#     @abstractmethod
+#     def get_info(self):
+#         pass
 
-class Phone(ElectronicItems):
-    def __init__(self, name:str, model:str, price: int, year:str):
-        super().__init__(name, model, price)
-        self.year = year
+# class Phone(ElectronicItems):
+#     def __init__(self, name:str, model:str, price: int, year:str):
+#         super().__init__(name, model, price)
+#         self.year = year
         
-    def get_info(self):
-        return f'Это {self.name} модели {self.model} его цена составляет {self.price}$, он был выпущен в {self.year} году'
+#     def get_info(self):
+#         return f'Это {self.name} модели {self.model} его цена составляет {self.price}$, он был выпущен в {self.year} году'
 
-result = Phone("Телефон", "Nokia", 500, 2000)
-print(result.get_info())
+# result = Phone("Телефон", "Nokia", 500, 2000)
+# print(result.get_info())
 
-
-class CordPhone(ElectronicItems):
-    def __init__(self, name:str, model:str, price: int, width:str, height:str):
-        super().__init__(name, model, price)
-        self.width = width
-        self.height= height
+# class CordPhone(ElectronicItems):
+#     def __init__(self, name:str, model:str, price: int, width:str, height:str):
+#         super().__init__(name, model, price)
+#         self.width = width
+#         self.height= height
         
-    def get_info(self):
-        return f'Домашний {self.name} модели:{self.model}, цена рынка: {self.price}$, ширина составляет {self.width}, а высота {self.height}'
+#     def get_info(self):
+#         return f'Домашний {self.name} модели:{self.model}, цена рынка: {self.price}$, ширина составляет {self.width}, а высота {self.height}'
 
-result = CordPhone("телефон", "Panasonic KX-TGC310", 50, '21 см.', '7 см.' )
-print(result.get_info())
+# result = CordPhone("телефон", "Panasonic KX-TGC310", 50, '21 см.', '7 см.' )
+# print(result.get_info())
+
+# В данном примере класс `MyClass` имеет конструктор `__init__()`,
+# который принимает два параметра и устанавливает их значения для атрибутов `param1` и `param2`
+# объекта класса. При создании объекта `obj` с передачей параметров в конструктор, атрибуты объекта
+# инициализируются соответствующими значениями.
+class MyClass:
+ def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+
+obj = MyClass("значение1", "значение2")
+print(obj.param1)  # выводит "значение1"
+print(obj.param2)  # выводит "значение2"
