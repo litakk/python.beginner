@@ -164,11 +164,11 @@
 # который принимает два параметра и устанавливает их значения для атрибутов `param1` и `param2`
 # объекта класса. При создании объекта `obj` с передачей параметров в конструктор, атрибуты объекта
 # инициализируются соответствующими значениями.
-class MyClass:
- def __init__(self, param1, param2):
-        self.param1 = param1
-        self.param2 = param2
+# class MyClass:
+#  def __init__(self, param1, param2):
+#         self.param1 = param1
+#         self.param2 = param2
 
-obj = MyClass("значение1", "значение2")
-print(obj.param1)  # выводит "значение1"
-print(obj.param2)  # выводит "значение2"
+# obj = MyClass("значение1", "значение2")
+# print(obj.param1)  # выводит "значение1"
+# print(obj.param2)  # выводит "значение2"
