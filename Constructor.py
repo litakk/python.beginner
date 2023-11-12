@@ -13,7 +13,7 @@
 
 
 
-# # super().__init__(name)`: Эта строка вызывает конструктор 
+# # super().__init__(name) : Эта строка вызывает конструктор 
 # # родительского класса Animals и передает #  аргумент name.
 # class Tiger(Animals):
 #     def __init__(self, name:str, age:int, speed:int) -> None:
@@ -172,3 +172,9 @@
 # obj = MyClass("значение1", "значение2")
 # print(obj.param1)  # выводит "значение1"
 # print(obj.param2)  # выводит "значение2"
+
+
+
+
+
+# Великий уровнитель 1,2,3
