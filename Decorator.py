@@ -41,7 +41,6 @@ lesson  = "RU: Декораторы и обертки. EN: Decorators & Wrappers
 
 # display() # == decorator_function(display)()
 
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 # def decorator_function(original_function):
