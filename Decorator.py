@@ -42,6 +42,20 @@ lesson  = "RU: Декораторы и обертки. EN: Decorators & Wrappers
 # display() # == decorator_function(display)()
 
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# def decorator_function(original_function):
+#     def wrapper_function(*args, **kwargs):
+#         print(f"Wrapper executed this before {original_function.__name__}")
+#         return original_function(*args, **kwargs)
+#     return wrapper_function
+
+# @decorator_function
+# def original_function(*args):
+#     print("Original function ran")
+
+# x = [1, 2, 3, 4, 5]
+# original_function(x)
 
 
 
