@@ -20,20 +20,20 @@ print(a.get_b)
 print(a.do_smth())
 
 
-class Aplha:
-    def __init__(self):
-        self.test = 'This is test'
-        self_a = 2
-        self__b = 2
+# class Aplha:
+#     def __init__(self):
+#         self.test = 'This is test'
+#         self_a = 2
+#         self__b = 2
         
-    def do_something(self):
-        return self.__b
+#     def do_something(self):
+#         return self.__b
 
-@property
-def get_b(self):
-    return self.__b
+# @property
+# def get_b(self):
+#     return self.__b
 
-a = Aplha()
-print(a.test)
-print(a.get_b)
-print(a.do_something)
+# a = Aplha()
+# print(a.test)
+# print(a.get_b)
+# print(a.do_something)
