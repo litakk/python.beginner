@@ -20,15 +20,31 @@
 
 
 
-class Animal:
-    def __init__(self, name):
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def speak(self):
+#      return NotImplementedError('Subbclass must implement abstract method')
+
+# class Dog(Animal):
+#     def speak(self):
+#      return self.name+' says Woof'
+# dog = Dog('My Dog')
+# print(dog.speak())
+
+
+
+class Animals:
+    def __init__(self,name):
         self.name = name
-
+        
     def speak(self):
-     return NotImplementedError('Subbclass must implement abstract method')
+        return NotImplementedError('Subbclass must implement abstract method')
 
-class Dog(Animal):
+class Dog(Animals):
     def speak(self):
-     return self.name+' says Woof'
-dog = Dog('My Dog')
+        return self.name +' says WOOF-WOOF'        
+
+dog = Dog('Max')
 print(dog.speak())
