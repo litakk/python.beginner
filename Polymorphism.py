@@ -40,11 +40,11 @@ class Animals:
         self.name = name
         
     def speak(self):
-        return NotImplementedError('Subbclass must implement abstract method')
+        return NotImplementedError('Error')
 
 class Dog(Animals):
     def speak(self):
-        return self.name +' says WOOF-WOOF'        
+        return self.name + ' says Woof-Woof'
 
-dog = Dog('Max')
+dog = Dog('max')
 print(dog.speak())
