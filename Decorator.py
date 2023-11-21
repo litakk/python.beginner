@@ -28,17 +28,17 @@
 
 # Синтаксис - SYNTAX
 
-# def decorator_function(original_function):
-#     def wrapper_function(): # RU: обертка => та функция которая покрывает оригинальную функцию
-#         return original_function()
-#     return wrapper_function
+def decorator_function(original_function):
+    def wrapper_function(): # RU: обертка => та функция которая покрывает оригинальную функцию
+        return original_function()
+    return wrapper_function
 
-# @decorator_function
-# def display():
-#     print("Display function ran")
+@decorator_function
+def display():
+    print("Display function ran")
 
 
-# display() # == decorator_function(display)()
+display() # == decorator_function(display)()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # БАЗОВЫЙ ДЕКОРАТОР
@@ -139,18 +139,18 @@
 
 # ПРОСТО ТАК
 
-def decorator_glavniy(argument_function):
-    def wrapper_func(*args, **kwargs):
-        print(f'Wrapper executed this before {argument_function.name}')
-        return argument_function(*args, **kwargs)
-    return wrapper_func
+# def decorator_glavniy(argument_function):
+#     def wrapper_func(*args, **kwargs):
+#         print(f'Wrapper executed this before {argument_function.name}')
+#         return argument_function(*args, **kwargs)
+#     return wrapper_func
 
-@decorator_glavniy
-def argument_function(*args):
-    print('Original function ran')
+# @decorator_glavniy
+# def argument_function(*args):
+#     print('Original function ran')
 
-x = [1,2,3,4,5]
-argument_function(x)
+# x = [1,2,3,4,5]
+# argument_function(x)
 
 #  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
