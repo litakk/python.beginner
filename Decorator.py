@@ -139,18 +139,18 @@
 
 # ПРОСТО ТАК
 
-# def decorator_glavniy(argument_function):
-#     def wrapper_func(*args, **kwargs):
-#         print(f'Wrapper executed this before {argument_function.name}')
-#         return argument_function(*args, **kwargs)
-#     return wrapper_func
+def decorator_glavniy(argument_function):
+    def wrapper_func(*args, **kwargs):
+        print(f'Wrapper executed this before {argument_function.name}')
+        return argument_function(*args, **kwargs)
+    return wrapper_func
 
-# @decorator_glavniy
-# def argument_function(*args):
-#     print('Original function ran')
+@decorator_glavniy
+def argument_function(*args):
+    print('Original function ran')
 
-# x = [1,2,3,4,5]
-# argument_function(x)
+x = [1,2,3,4,5]
+argument_function(x)
 
 #  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

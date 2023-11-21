@@ -1,5 +1,3 @@
-
-
 # 6. Write a Python program to remove duplicates from the dictionary.
 # First, leave at least one item from duplicates
 # Second, delete all duplicates
