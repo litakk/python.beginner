@@ -27,7 +27,6 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 # Синтаксис - SYNTAX
-
 def decorator_function(original_function):
     def wrapper_function(): # RU: обертка => та функция которая покрывает оригинальную функцию
         return original_function()
@@ -37,10 +36,10 @@ def decorator_function(original_function):
 def display():
     print("Display function ran")
 
-
 display() # == decorator_function(display)()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 # БАЗОВЫЙ ДЕКОРАТОР
 # def decorator_function(original_function):
 #     def wrapper_function(*args, **kwargs):
