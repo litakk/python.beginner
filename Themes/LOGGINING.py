@@ -21,7 +21,7 @@
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-# import translators
+import translator
 
-# q_text = 'какая погода сегодня?'
-# print(translators.translate_text(q_text))
+q_text = 'какая погода сегодня?'
+print(translators.translate_text(q_text))
