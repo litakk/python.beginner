@@ -5,7 +5,6 @@
 
 import re
 
-
 text = "Mentioning of reD, GrEen and BLUE is prohibited"
 words_to_replace = ["red", "green", "blue"]
 
