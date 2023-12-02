@@ -18,7 +18,6 @@
 
 # пакет Faker = Fake - нужен для активации  - ДЛЯ УСТАНОВКИ - pipenv install - после установки - pipenv shell
 
-
 # JSON - JAVA SCRIPT OBJECT NOTATION
 # JSON.stringify(data) -  
 # JSON.parse(data)  -  
