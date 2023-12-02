@@ -1,4 +1,5 @@
-# REGULAR EXPRESSION
+# REGULAR EXPRESSION - РЕГУЛЯРНОЕ ВЫРАЖЕНИЕ
+
 import re
 
 # re.findall(pattern, string) - НАХОДИТ ВСЕ СОВПАДАЮЩИЕСЯ ЗНАЧЕНИЯ  
@@ -32,18 +33,18 @@ r = re.sub(
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# compile создает регулярное выражение
+# compile - создает регулярное выражение
 # re.compile(r'[a-z]*)
-# - - -   - - - 
+# - - - - - - 
 # re.compile(r'[a-z])
 # print(re)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# x = r"[a-z]"
 
+# x = r"[a-z]"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # APPENDLEFT - ДОБАВЛЯЕТ СЛЕВА
-# ROTATE - МЕНЯЕТ МестА С НАЧАЛА в КОНЕЦ
+# ROTATE - МЕНЯЕТ МЕСТА С НАЧАЛА В КОНЕЦ
 import collections
 queue = collections.deque()
 queue.append(5)
