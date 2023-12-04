@@ -1,5 +1,5 @@
 # REGULAR EXPRESSION - РЕГУЛЯРНОЕ ВЫРАЖЕНИЕ
-
+# РАБОТА С ТЕКСТОМ
 import re
 
 # re.findall(pattern, string) - НАХОДИТ ВСЕ СОВПАДАЮЩИЕСЯ ЗНАЧЕНИЯ  
