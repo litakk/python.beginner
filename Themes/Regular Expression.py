@@ -25,11 +25,11 @@ x = 'ab ab ab ab'
 original_text = 'The rain in Spain'
 replacement = "*"
 r = re.sub(
-    r'ab',   # ЧТО МЕНЯТЬ
-    replacement, # ОТКУДА МЕНЯТЬ
-    original_text, # НА ЧТО МЕНЯТЬ
-    count=2, # Сколько менять
-    flags=re.IGNORECASE #  указывает, что замена должна производиться без учёта регистра.
+    r'ab',                            # ЧТО МЕНЯТЬ
+    replacement,                      # ОТКУДА МЕНЯТЬ
+    original_text,                    # НА ЧТО МЕНЯТЬ
+    count=2,                          # Сколько менять
+    flags=re.IGNORECASE               #  указывает, что замена должна производиться без учёта регистра.
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
