@@ -42,3 +42,18 @@ r = re.sub(
 # re.compile(r'[a-z])
 # print(re)
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# x = r"[a-z]"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# APPENDLEFT - ДОБАВЛЯЕТ СЛЕВА
+# ROTATE - МЕНЯЕТ МЕСТА С НАЧАЛА В КОНЕЦ
+import collections
+queue = collections.deque()
+queue.append(5)
+queue.append('Mine')
+queue.append(True)
+queue.appendleft(10)
+print(queue)
+queue.rotate(2) # меняет местами индексы
+print(queue)
