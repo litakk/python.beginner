@@ -29,7 +29,6 @@
 
 # ====================================
 
-# Insert data
 # ДЛЯ СОЗДАНИЯ ОДНОЙ ТАБЛИЦЫ :
 # INSERT INTO users (name, email, password) 
 # VALUES ('John Doe', 'test@gmail.com', '12345');
