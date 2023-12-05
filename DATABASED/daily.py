@@ -53,3 +53,16 @@
 #     password VARCHAR(255) NOT NULL UNIQUE DEFAULT '12345' 
 # );
 
+# ====================================
+
+# Insert data
+# ДЛЯ СОЗДАНИЯ ОДНОЙ ТАБЛИЦЫ :
+# INSERT INTO users (name, email, password) 
+# VALUES ('John Doe', 'test@gmail.com', '12345');
+
+# ДЛЯ СОЗДАНИЯ НЕСКОЛЬКИХ СРАЗУ 
+# INSERT INTO users (name, email, password)
+# VALUES ,
+#     ('John Doe', 'test2@gmail.com', '12'),
+#     ('Jane Doe 2', 'test3@gmail.com', '123'),
+#     ('Jack Doe 3', 'test4@gmail.com', '1234');
