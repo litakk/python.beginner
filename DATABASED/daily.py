@@ -37,7 +37,7 @@
 # INSERT INTO users (name, email, password)
 # VALUES ,
 #     ('John Doe', 'test2@gmail.com', '12'),
-#     ('Jane Doe 2', 'test3@gmail.com', '123'),
+#     ('Jane Doe 2', 'test3@gmail.com', '123');
 
 # ====================================
 
