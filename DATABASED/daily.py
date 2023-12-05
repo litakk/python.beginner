@@ -43,3 +43,13 @@
 # DELETE - Удалить запись из таблицы
 # delete the car with id 5 from the table
 # RU: удалить автомобиль с id 5 из таблицы
+
+# =================================================================================
+
+# CREATE TABLE users (
+#     id SERIAL PRIMARY KEY,
+#     name VARCHAR(255),
+#     email VARCHAR(255),
+#     password VARCHAR(255) NOT NULL UNIQUE DEFAULT '12345' 
+# );
+
