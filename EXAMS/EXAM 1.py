@@ -1,14 +1,8 @@
-# 6. Write a Python program to remove duplicates from the dictionary.
-# First, leave at least one item from duplicates
-# Second, delete all duplicates
-# RU: Напишите программу Python для удаления дубликатов из словаря.
+# Напишите программу Python для удаления дубликатов из словаря.
 # Во-первых, оставьте хотя бы один элемент из дубликатов
 # Во-вторых, удалите все дубликаты
-def rem_duplicates(dict):
-    pass
 # ex: {'x':1, 'y':2, 'z':2, 'a':3, 'b':1, 'c':3}
 # =>  {x':1, 'y':2, 'a':3}
-
 
 # RU: Вот как будет выглядеть программа для удаления дубликатов из словаря:
 
@@ -33,7 +27,6 @@ print(unique_dict) # выводит: {'x': 1, 'y': 2, 'a': 3}
 
 # ==========================================================================
 
-
 # 7. Write a function that takes a dict as first argument and number as second argument.
 # Return a list of all the keys that have values greater than the number passed as second argument.
 # RU: Напишите функцию, которая принимает словарь в качестве первого аргумента и число в
@@ -43,7 +36,6 @@ print(unique_dict) # выводит: {'x': 1, 'y': 2, 'a': 3}
 # Output:  {'b': 200, 'c': 300}
 def get_keys_greater_than(dict, num):
     pass
-
 
 # ==========================================================================
 
