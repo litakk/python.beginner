@@ -496,3 +496,58 @@ else:
 # .ua - Украина
 # .uz - Узбекистан
 # .us - США
+
+# ========================================================
+# ========================================================
+# ========================================================
+# ========================================================
+# ========================================================
+
+# TASK 1
+# # СОЗДАТЬ ТАБЛИЦУ МАШИН
+
+# CREATE TABLE cars2 ( 
+#     id SERIAL PRIMARY KEY, 
+#     name  CHAR(100), 
+#     year  CHAR(100), 
+#     price VARCHAR(255), 
+#     color VARCHAR(255), 
+#     origin VARCHAR(255)
+# );
+# - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# ДОБАВИТЬ ОДНУ СТРОКУ ИНФОРМАЦИИ 
+
+# INSERT INTO persons (name, email, password) 
+# VALUES ('John Doe', 'test@gmail.com', '12345');
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# ДОБАВИТЬ СРАЗУ НЕСКОЛЬКО СТРОК ИНФОРМАЦИИ
+
+# INSERT INTO cars2 (name, year, price, color, origin)
+# VALUES
+# ('Toyota Camry', '2022', '25 000$', 'red','Japan'),
+# ('BMW X5', '2023', '60 500$', 'pink','Germany'),
+# ('Ford Mustang', '2021', '30 000$', 'blue','USA');
+
+# ('Mercedes', '1926', '43 797$', 'black','Germany'),
+# ('BMW 1-Series Base 1.6 MT', '2020', '60 000$', 'gray','Germany');
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# UPDATE cars2 SET sold = 'True' WHERE id = 4
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# ALTER TABLE cars2 ADD COLUMN sold BOOLEAN
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# DELETE FROM cars2 WHERE id = 5
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# ПОСМОТРЕТЬ РЕЗУЛЬТАТ
+# SELECT * FROM cars2;
+
