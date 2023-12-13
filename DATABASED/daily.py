@@ -19,26 +19,38 @@
 # SYNTAX - под  каждым кодом пишем в конце  ; 
 # ПОТОМ СОЗДАЕМ СЕРВЕР 127.0.0.1 И В НЕМ СОЗДАЕМ ТАБЛИЦУ А ЗАТЕМ КОНТРОЛИРУЕМ
 
+#  СОЗДАТЬ ТАБЛИЦУ
 
-# CREATE TABLE users (
-#     id SERIAL PRIMARY KEY,
-#     name VARCHAR(255), # - используется для хранения строк и текста. 
-#     email VARCHAR(255), # - используется для хранения строк и текста. 
-#     password VARCHAR(255) NOT NULL UNIQUE DEFAULT '12345' 
-# );
+#  CREATE TABLE persons (
+    #  id SERIAL PRIMARY KEY,
+    #  name VARCHAR(255),
+    #  email VARCHAR(255),
+    #  password VARCHAR(255) NOT NULL UNIQUE DEFAULT '12345' 
+#  );
 
-# ====================================
+#  - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-# ДЛЯ СОЗДАНИЯ ОДНОЙ ТАБЛИЦЫ :
-# INSERT INTO users (name, email, password) 
-# VALUES ('John Doe', 'test@gmail.com', '12345');
+#  ДОБАВИТЬ ОДНУ СТРОКУ ИНФОРМАЦИИ 
 
-# ДЛЯ СОЗДАНИЯ НЕСКОЛЬКИХ СРАЗУ 
-# INSERT INTO users (name, email, password)
-# VALUES ,
-#     ('John Doe', 'test2@gmail.com', '12'),
-#     ('Jane Doe 2', 'test3@gmail.com', '123');
+#  INSERT INTO persons (name, email, password) 
+#  VALUES ('John Doe', 'test@gmail.com', '12345');
 
+#  - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+#  ДОБАВИТЬ СРАЗУ НЕСКОЛЬКО СТРОК ИНФОРМАЦИИ
+
+#  INSERT INTO persons (name, email, password)
+#  VALUES 
+    #  ('John Doe', 'test2@gmail.com', '12'),
+    #  ('Jane Doe 2', 'test3@gmail.com', '123'),
+    #  ('Jack Doe 3', 'test4@gmail.com', '1234');
+
+#  - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+#  ПОСМОТРЕТЬ РЕЗУЛЬТАТ
+#  SELECT * FROM users;
+
+#  - - - - - - - - - - - - - - - - - - - - - - - - - 
 # ====================================
 
 # SELECT * FROM users; - для просмотра результата
