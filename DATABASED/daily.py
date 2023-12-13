@@ -423,6 +423,7 @@
 
 # Для работы с postgresql нам необходимо установить psycopg2-binary
 # pip install psycopg2-binary
+
 import os
 import faker
 import psycopg2
@@ -501,5 +502,3 @@ else:
 # .ua - Украина
 # .uz - Узбекистан
 # .us - США
-# Для работы с postgresql нам необходимо установить psycopg2-binary
-# pip install psycopg2-binary
