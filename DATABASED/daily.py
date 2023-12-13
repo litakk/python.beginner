@@ -276,13 +276,13 @@
 # CREATE TABLE Students (
 #   id SERIAL PRIMARY KEY,
 #   name VARCHAR(255) NOT NULL,
-#   электронная почта VARCHAR(255) НЕ НУЛЬ
+#   email почта VARCHAR(255) NOT NULL
 # );
 
 # CREATE TABLE Course (
 #   id SERIAL PRIMARY KEY,
 #   name VARCHAR(255) NOT NULL,
-#   email VARCHAR(255) NOT NULL
+#   instructor VARCHAR(255) NOT NULL
 # );
 
 # CREATE TABLE 
