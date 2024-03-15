@@ -34,7 +34,7 @@
 # print(test_txt.rjust(20, "*"))
 # --- --- --- --- --- --- --- --- --- --- --- ---
 # x = "   Hello world   "
-# print(x.strip())  # "Hello world" => УБИРАЕТ ПРОБЕЛЫ
+# print(x.strip())  # "Hello world" => УБИРАЕТ ПРОБЕЛЫ В НАЧАЛЕ И В КОНЦЕ
 # --- --- --- --- --- --- --- --- --- --- --- ---
 # x = "Text 1, Text 2, Text 3"
 # print(list(x)) привет
